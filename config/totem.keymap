@@ -17,7 +17,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NAV  1
+#define NUM  1
 #define SYM  2
 #define ADJ  3
 #define TVP1 4
@@ -34,7 +34,7 @@
      behaviors {
             dotcol: dot_colon {
                 compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <7>;
+                #binding-cells = <0>;
                 bindings = <&kp DOT>, <&kp COLON>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
             };
@@ -87,9 +87,9 @@ label= "HD Vibranium F"                    ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp X       &kp W       &kp M       &kp G       &kp J           &kp HASH    &kp dotcol  &kp SLASH   &kp DQT     &kp SQT
+                &kp X       &kp W       &kp M       &kp G       &kp J           &kp HASH    &dotcol     &kp SLASH   &kp DQT     &kp SQT
                 &mt LCTRL S &mt LALT C  &mt LGUI N  &mt LSHFT T &kp K           &kp COMMA   &mt RSHFT A &mt RGUI E  &mt RALT I  &mt RCTRL H
-    &kp QU      &kp F       &kp P       &kp L       &kp D       &kp V           &kp MINUS   &kp U       &kp O       &kp Y       &kp B       &kp Z
+    &kp Q       &kp F       &kp P       &kp L       &kp D       &kp V           &kp MINUS   &kp U       &kp O       &kp Y       &kp B       &kp Z
                                         &kp BSPC    &kp R       &lt NUM TAB     &lt SYM ESC &kp SPACE   &kp RETURN
                         >;
                 };
@@ -99,7 +99,7 @@ label= "HD Vibranium F"                    ;
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAV"                               ;
+label= "NUM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃     UP    ┃           ┃     {     ┃   ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
