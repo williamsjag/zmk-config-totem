@@ -78,7 +78,7 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
             }
-     };
+     }
      home_row_mods {
             compatible = "zmk,behavior-hold-tap";
             hrl: home_row_mod_left {
@@ -104,6 +104,11 @@
      }
      combos {
             compatible = "zmk,combos";
+            caps {
+                timeout-ms = <50>;
+                key-positions = <14 15>;
+                bindings = &caps_word;
+            };
             combo_esc {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
