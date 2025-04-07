@@ -79,7 +79,7 @@
             ht_qu: ht_qu {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <0>;
-                bindings = <&kp Q>, <&qu>;
+                bindings = <&kp Q &qu>;
                 tapping-term-ms = <135>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
