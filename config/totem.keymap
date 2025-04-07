@@ -38,6 +38,42 @@
                 bindings = <&kp DOT>, <&kp COLON>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
             };
+            commasemi: comma_semi {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp COMMA>, <&kp SEMI>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            hashdol: hash_dollar {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp HASH>, <&kp DOLLAR>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            slashstar: slash_star {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp SLASH>, <&kp STAR>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            dqtlbkt: dqt_lbkt {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp DQT>, <&kp LBKT>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            sqtrbkt: sqt_rbkt {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp SQT>, <&kp RBKT>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            minusplus: minus_plus {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp MINUS>, <&kp PLUS>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
      };
      combos {
             compatible = "zmk,combos";
@@ -54,6 +90,13 @@
     };
 
     macros {
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp Q &kp U>
+                ;
+        };
         gif: gif {
             label = "giphy";
             compatible = "zmk,behavior-macro";
@@ -87,9 +130,9 @@ label= "HD Vibranium F"                    ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp X       &kp W       &kp M       &kp G       &kp J           &kp HASH    &dotcol     &kp SLASH   &kp DQT     &kp SQT
-                &mt LCTRL S &mt LALT C  &mt LGUI N  &mt LSHFT T &kp K           &kp COMMA   &mt RSHFT A &mt RGUI E  &mt RALT I  &mt RCTRL H
-    &kp Q       &kp F       &kp P       &kp L       &kp D       &kp V           &kp MINUS   &kp U       &kp O       &kp Y       &kp B       &kp Z
+                &kp X       &kp W       &kp M       &kp G       &kp J           &hashdol    &dotcol     &slashstar  &dqtlbkt    &sqtrbkt
+                &mt LCTRL S &mt LALT C  &mt LGUI N  &mt LSHFT T &kp K           &commasemi  &mt RSHFT A &mt RGUI E  &mt RALT I  &mt RCTRL H
+    &qu         &kp F       &kp P       &kp L       &kp D       &kp V           &minusplus  &kp U       &kp O       &kp Y       &kp B       &kp Z
                                         &kp BSPC    &kp R       &lt NUM TAB     &lt SYM ESC &kp SPACE   &kp RETURN
                         >;
                 };
