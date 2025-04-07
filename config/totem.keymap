@@ -77,8 +77,8 @@
                 tapping-term-ms = <135>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
-            }
-     }
+            };
+     };
      home_row_mods {
             compatible = "zmk,behavior-hold-tap";
             hrl: home_row_mod_left {
@@ -101,7 +101,7 @@
                 hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34>;
                 hold-trigger-on-release;
             };
-     }
+     };
      combos {
             compatible = "zmk,combos";
             caps {
