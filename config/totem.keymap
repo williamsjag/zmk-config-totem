@@ -100,7 +100,7 @@
             };
             lk_QU: linger_key_QU {
                 compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <0>;
+                #binding-cells = <1>;
                 bindings = <&kp>, <&qu>;
                 tapping-term-ms = <135>;
                 quick-tap-ms = <0>;
