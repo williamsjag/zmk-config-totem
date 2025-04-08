@@ -127,12 +127,13 @@
     };
 
     macros {
-        compatible = "zmk,behavior-macro";
         qu: qu {
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
         };
         gif: gif {
+            compatible = "zmk,behavior-macro";
             label = "giphy";
             #binding-cells = <0>;
             bindings
