@@ -100,7 +100,7 @@
             };
             lk_QU: linger_key_QU {
                 compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <1>;
+                #binding-cells = <2>;
                 bindings = <&kp>, <&qu>;
                 tapping-term-ms = <135>;
                 quick-tap-ms = <0>;
@@ -166,7 +166,7 @@ label= "HD Vibranium F"                    ;
 
                 &kp X       &kp W       &kp M       &kp G       &kp J           &hashdol    &dotcol     &slashstar  &dqtlbkt    &sqtrbkt
                &hrl LCTRL S &hrl LALT C &hrl LGUI N &hrl LSHFT T &kp K          &commasemi &hrr RSHFT A &hrr RGUI E &hrr RALT I &hrr RCTRL H
-    &lk_QU Q    &kp F       &kp P       &kp L       &kp D       &kp V           &minusplus  &kp U       &kp O       &kp Y       &kp B       &kp Z
+    &lk_QU Q 0  &kp F       &kp P       &kp L       &kp D       &kp V           &minusplus  &kp U       &kp O       &kp Y       &kp B       &kp Z
                                         &kp BSPC    &kp R       &lt NUM TAB     &lt SYM ESC &kp SPACE   &kp RETURN
                         >;
                 };
