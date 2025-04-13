@@ -324,7 +324,7 @@ label= "NUM"                               ;
 
                 &kp TAB     &kp HOME    &kp UP      &kp END     &msc SCRL_DOWN   &kp SLASH      &kp N7      &kp N8      &kp N9      &kp MINUS
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &msc SCRL_UP    &hrr RSHFT STAR &hrr RGUI N4 &hrr RALT N5 &hrr RCTRL N6 &kp PLUS
-    &none       &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC     
+    &none       &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC
                                         &trans      &trans      &trans           &mo EXT        &kp N0      &kp DOT
                         >;
                 };
@@ -343,15 +343,15 @@ label= "SYM"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃     !     ┃     {     ┃     }     ┃     ,     ┃   ┃     .     ┃     ~     ┃     -     ┃     @     ┃   NAME    ┃    BSPC   ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃     \     ┃   SPACE   ┃    ADJ    ┃   ┃  XXXXXXX  ┃           ┃           ┃
+//                                     ┃     \     ┃   SPACE   ┃    EXT    ┃   ┃  XXXXXXX  ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))       
+                &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))
                 &kp LT      &kp GT      &kp LPAR    &kp RPAR &hrl LSFT minusplus &kp COLON &hrr RSFT SEMI &eqnoteq    &kp AMPS     &uname
-    &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC         
-                                        &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans      
+    &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC
+                                        &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans
                         >;
                 };
 
