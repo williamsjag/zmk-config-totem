@@ -349,7 +349,7 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))
-                &kp LT      &kp GT      &kp LPAR    &kp RPAR &hrl LSHFT minusplus &kp COLON &hrr RSHFT SEMI &eqnoteq    &kp AMPS     &uname
+                &kp LT      &kp GT      &kp LPAR    &kp RPAR &kp A &kp COLON &hrr RSHFT SEMI &eqnoteq  &kp AMPS     &uname
     &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC
                                         &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans
                         >;
