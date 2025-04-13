@@ -87,13 +87,19 @@
                 #binding-cells = <0>;
                 bindings = <&username>, <&email>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
-            }
+            };
             name: name {
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
                 bindings = <&firstname>, <&lastname>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
-            }
+            };
+            currency: currency {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&firstname>, <&lastname>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
      };
      custom_behaviors {
             hrl: home_row_mod_left {
@@ -269,7 +275,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &kp DOLLAR  &kp PERCENT  &kp LC(LG(SPACE))       
+                &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))       
                 &kp LT      &kp GT      &kp LPAR    &kp RPAR &hrl LSFT minusplus &kp COLON &hrr RSFT SEMI &eqnoteq    &kp AMPS     &uname
     &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC         
                                         &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans      
