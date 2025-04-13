@@ -97,7 +97,7 @@
             currency: currency {
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
-                bindings = <&firstname>, <&lastname>;
+                bindings = <&kp DOLLAR>, <&kp LA(LS(N2))>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
             };
      };
@@ -164,32 +164,32 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOT &kp DOT &kp SLASH>;
-        }
+        };
         notequal: notequal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EXCL &kp EQUAL>;
-        }
+        };
         username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S &kp J &kp A &kp G>;
-        }
+        };
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&username &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-        }
+        };
         firstname: firstname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp J &kp A &kp C &kp K &kp S &kp O &kp N>;
-        }
+        };
         lastname: lastname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S>;
-        }
+        };
         gif: gif {
             compatible = "zmk,behavior-macro";
             label = "giphy";
