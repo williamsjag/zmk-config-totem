@@ -100,6 +100,18 @@
                 bindings = <&kp DOLLAR>, <&kp LA(LS(N2))>;
                 mods = <(MOD_LSFT|MOD_RSFT)>;
             };
+            less: less {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp LT>, <&lessequal>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
+            greater: greater {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&kp GT>, <&greaterequal>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
      };
      custom_behaviors {
             hrl: home_row_mod_left {
@@ -243,6 +255,16 @@
             #binding-cells = <0>;
             bindings = <&kp EXCL &kp EQUAL>;
         };
+        lessequal: lessequal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+        };
+        greaterequal: greaterequal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+        };
         username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -349,7 +371,7 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))
-                &kp LT      &kp GT      &kp LPAR    &hrl LSHFT RPAR &kp UNDER   &kp COLON &hrr RSHFT SEMI &eqnoteq    &kp AMPS     &uname
+                &less       &greater    &kp LPAR    &hrl LSHFT RPAR &kp UNDER   &kp COLON &hrr RSHFT SEMI &eqnoteq    &kp AMPS     &uname
     &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC
                                         &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans
                         >;
