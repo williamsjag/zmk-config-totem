@@ -134,51 +134,100 @@
             };
      };
      combos {
+            compatible = "zmk,combos";
             combo_caps {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <13 16>;
                 bindings = <&caps_word>;
             };
             combo_esc {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
             };
            combo_th {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <12 13>;
-                bindings = <&kp T &kp H>;
+                bindings = <&th>;
            };
            combo_sh {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <11 13>;
-                bindings = <&kp S &kp H>;
+                bindings = <&sh>;
            };
            combo_ch {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <11 12>;
-                bindings = <&kp C &kp H>;
+                bindings = <&ch>;
            };
            combo_tch {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <11 12 13>;
-                bindings = <&kp T &kp C &kp H>;
+                bindings = <&tch>;
            };
            combo_sch {
-                compatible = "zmk,combos";
                 timeout-ms = <50>;
                 key-positions = <10 11 12>;
-                bindings = <&kp S &kp C &kp H>;
+                bindings = <&sch>;
+           };
+           combo_gh {
+                timeout-ms = <50>;
+                key-positions = <2 3>;
+                bindings = <&gh>;
+           };
+           combo_wh {
+                timeout-ms = <50>;
+                key-positions = <1 2>;
+                bindings = <&wh>;
+           };
+           combo_ph {
+                timeout-ms = <50>;
+                key-positions = <21 22>;
+                bindings = <&ph>;
            };
     };
 
     macros {
+        th: th {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H>;
+        };
+        sh: sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H>;
+        };
+        ch: ch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H>;
+        };
+        wh: wh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H>;
+        };
+        ph: ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp H>;
+        };
+        gh: gh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp H>;
+        };
+        tch: tch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp C &kp H>;
+        };
+        sch: sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp H>;
+        };
         qu: qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
