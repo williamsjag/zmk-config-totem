@@ -137,7 +137,7 @@
             combo_caps {
                 compatible = "zmk,combos";
                 timeout-ms = <50>;
-                key-positions = <14 15>;
+                key-positions = <13 16>;
                 bindings = <&caps_word>;
             };
             combo_esc {
@@ -151,6 +151,30 @@
                 timeout-ms = <50>;
                 key-positions = <12 13>;
                 bindings = <&kp T &kp H>;
+           };
+           combo_sh {
+                compatible = "zmk,combos";
+                timeout-ms = <50>;
+                key-positions = <11 13>;
+                bindings = <&kp S &kp H>;
+           };
+           combo_ch {
+                compatible = "zmk,combos";
+                timeout-ms = <50>;
+                key-positions = <11 12>;
+                bindings = <&kp C &kp H>;
+           };
+           combo_tch {
+                compatible = "zmk,combos";
+                timeout-ms = <50>;
+                key-positions = <11 12 13>;
+                bindings = <&kp T &kp C &kp H>;
+           };
+           combo_sch {
+                compatible = "zmk,combos";
+                timeout-ms = <50>;
+                key-positions = <10 11 12>;
+                bindings = <&kp S &kp C &kp H>;
            };
     };
 
@@ -249,10 +273,10 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp TAB     &kp HOME    &kp UP      &kp END     &msc SCRL_DOWN   &kp KP_SLASH   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MINUS
-                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &msc SCRL_UP    &hrr RSHFT STAR &hrr RGUI N4 &hrr RALT N5 &hrr RCTRL N6 &kp KP_PLUS
-    &none       &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp KP_COMMA   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_EQUAL   &kp BSPC     
-                                        &trans      &trans      &trans           &mo EXT     &kp KP_N0   &kp KP_DOT
+                &kp TAB     &kp HOME    &kp UP      &kp END     &msc SCRL_DOWN   &kp SLASH      &kp N7      &kp N8      &kp N9      &kp MINUS
+                &none       &kp LEFT    &kp DOWN    &kp RIGHT   &msc SCRL_UP    &hrr RSHFT STAR &hrr RGUI N4 &hrr RALT N5 &hrr RCTRL N6 &kp PLUS
+    &none       &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC     
+                                        &trans      &trans      &trans           &mo EXT        &kp N0      &kp DOT
                         >;
                 };
 
