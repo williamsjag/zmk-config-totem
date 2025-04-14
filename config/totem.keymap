@@ -145,6 +145,15 @@
                 flavor = "tap-preferred";
             };
      };
+//             ┏━━━┳━━━┳━━━┳━━━┳━━━┓   ┏━━━┳━━━┳━━━┳━━━┳━━━┓
+//             ┃ 0 ┃ 1 ┃ 2 ┃ 3 ┃ 4 ┃   ┃ 5 ┃ 6 ┃ 7 ┃ 8 ┃ 9 ┃
+//             ┣━━━╋━━━╋━━━╋━━━╋━━━┫   ┣━━━╋━━━╋━━━╋━━━╋━━━┫
+//             ┃ 10┃ 11┃ 12┃ 13┃ 14┃   ┃ 15┃ 16┃ 17┃ 18┃ 19┃
+//         ┏━━━╋━━━╋━━━╋━━━╋━━━╋━━━┫   ┣━━━╋━━━╋━━━╋━━━╋━━━╋━━━┓
+//         ┃ 20┃ 21┃ 22┃ 23┃ 24┃ 25┃   ┃ 26┃ 27┃ 28┃ 29┃ 30┃ 31┃
+//         ┗━━━┻━━━┻━━━╋━━━╋━━━╋━━━┫   ┣━━━╋━━━╋━━━╋━━━┻━━━┻━━━┛
+//                     ┃ 32┃ 33┃ 34┃   ┃ 35┃ 36┃ 37┃
+//                     ┗━━━┻━━━┻━━━┛   ┗━━━┻━━━┻━━━┛
      combos {
             compatible = "zmk,combos";
             combo_caps {
@@ -152,6 +161,11 @@
                 key-positions = <13 16>;
                 bindings = <&caps_word>;
             };
+            combo_pipe {
+                timeout-ms = <50>;
+                key-positions = <16 17>;
+                bindings = <&kp PIPE>;
+            }
             combo_esc {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
@@ -194,9 +208,50 @@
            };
            combo_ph {
                 timeout-ms = <50>;
-                key-positions = <21 22>;
+                key-positions = <22 23>;
                 bindings = <&ph>;
            };
+           combo_reset {
+                timeout-ms = <50>;
+                layers = <3>;
+                key-positions = <20 31>;
+                bindings = &sys_reset;
+           }
+           combo_scap {
+                timeout-ms = <50>;
+                key-positions = <16 18>;
+                bindings = <&kp LG(LS(N4))>;
+           }
+           combo_exclaim {
+                timeout-ms = <50>;
+                key-positions = <5 6>;
+                bindings = <&kp EXCL>;
+           }
+           combo_question {
+                timeout-ms = <50>;
+                key-positions = <6 7>;
+                bindings = <&kp QUESTION>;
+           }
+           combo_guillemet {
+                timeout-ms = <50>;
+                key-positions = <7 8>;
+                bindings = <&guillemet>;
+           }
+           combo_dotcom {
+                timeout-ms = <50>;
+                key-positions = <27 28>;
+                bindings = <&dotcom>;
+           }
+           combo_dotfr {
+                timeout-ms = <50>;
+                key-positions = <28 29>;
+                bindings = <&dotfr>;
+           }
+           combo_gmail {
+                timeout-ms = <50>;
+                key-positions = <27 28 29>;
+                bindings = <&gmail>;
+           }
     };
 
     macros {
@@ -284,6 +339,26 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S>;
+        };
+        guillemet: guillemet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(BACKSLASH) &kp SPACE &kp SPACE &kp LA(LS(BACKSLASH)) &kp LEFT &kp LEFT>;
+        };
+        dotcom: dotcom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp C &kp O &kp M>;
+        };
+        dotfr: dotfr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp F &kp R>;
+        };
+        gmail: gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
         };
         gif: gif {
             compatible = "zmk,behavior-macro";
@@ -385,13 +460,13 @@ label= "SYM"                               ;
 label= "EXT"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
+//             ┃   WL 1/4  ┃  WL 1/2   ┃   WC 1/2  ┃  WR 1/2   ┃   WR 1/4  ┃   ┃ DOC START ┃  L CLICK  ┃   MS UP   ┃  R CLICK  ┃   DEFINE  ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃ BOOTLOAD  ┃ BT NEXT   ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
+//             ┃ PREV TAB  ┃ NEXT TAB  ┃ BRWS BACK ┃ BRWS FWD  ┃           ┃   ┃  DOC END  ┃  MS LEFT  ┃  MS DOWN  ┃ MS RIGHT  ┃ TRANSLATE ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃ BT PREV   ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
+// ┃           ┃  SEL LINE ┃ SEL W L   ┃   SEL W   ┃  SEL W R  ┃  SEL ALL  ┃   ┃   1PASS   ┃ ZOOM IN   ┃RESET ZOOM ┃ ZOOM OUT  ┃    HELP   ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃           ┃ XXXXXXXXX ┃   ┃ XXXXXXXXX ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
