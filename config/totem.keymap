@@ -471,9 +471,9 @@ label= "EXT"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
- &kp LC(LA(D)) &kp LC(LA(LEFT)) &kp LA(LC(UP)) &kp LC(LA(RIGHT)) &kcp LC(LA(G)) &kp LG(UP)         &kp      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &trans      &trans          &kp LG(DOWN)      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
+ &kp LC(LA(D)) &kp LC(LA(LEFT)) &kp LA(LC(UP)) &kp LC(LA(RIGHT)) &kp LC(LA(G)) &kp LG(UP)   &mkp MB1   &mmv MOVE_UP  &mkp MB2   &kp LG(LA(D))
+ &kp LG(LA(UP)) &kp LG(LA(UP))  &kp LG(LBKT)   &kp LG(RBKT) &kp (LC(LA(LG(SPACE)))) &kp LG(DOWN) &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &kp LG(N1)  
+    &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &kp LS(LG(SPACE)) &kp LG(PLUS) &kp F2      &kp F3       &kp F10        &kp LG(LS(QUESTION))         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
