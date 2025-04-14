@@ -472,7 +472,7 @@ label= "EXT"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃ PREV TAB  ┃ NEXT TAB  ┃ BRWS BACK ┃ BRWS FWD  ┃    GPT    ┃   ┃  DOC END  ┃  MS LEFT  ┃  MS DOWN  ┃ MS RIGHT  ┃ TRANSLATE ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃  SEL LINE ┃ SEL W L   ┃   SEL W   ┃  SEL W R  ┃  SEL ALL  ┃   ┃   1PASS   ┃ ZOOM IN   ┃RESET ZOOM ┃ ZOOM OUT  ┃    HELP   ┃           ┃
+// ┃RESET(HOLD)┃  SEL LINE ┃ SEL W L   ┃   SEL W   ┃  SEL W R  ┃  SEL ALL  ┃   ┃   1PASS   ┃ ZOOM IN   ┃RESET ZOOM ┃ ZOOM OUT  ┃    HELP   ┃RESET(HOLD)┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃ XXXXXXXXX ┃   ┃ XXXXXXXXX ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -481,7 +481,7 @@ label= "EXT"                               ;
 
         &kp LC(LA(D)) &kp LC(LA(LEFT)) &kp LA(LC(UP)) &kp LC(LA(RIGHT)) &kp LC(LA(G))      &kp LG(UP)        &mkp MB1       &mmv MOVE_UP   &mkp MB2   &kp LG(LA(D))
         &kp LG(LA(UP)) &kp LG(LA(UP))  &kp LG(LBKT)   &kp LG(RBKT) &kp (LC(LA(LG(SPACE)))) &kp LG(DOWN)      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp LG(N1)
- &trans &selline      &kp LA(LS(LEFT)) &selword       &kp (LA(LS(RIGHT))) &kp (LG(A))      &kp LS(LG(SPACE)) &kp LG(PLUS)   &kp LG(N0)     &kp LG(MINUS) &kp LG(LS(QUESTION)) &trans
+ &bootloader &selline &kp LA(LS(LEFT)) &selword       &kp (LA(LS(RIGHT))) &kp (LG(A))      &kp LS(LG(SPACE)) &kp LG(PLUS)   &kp LG(N0)     &kp LG(MINUS) &kp LG(LS(QUESTION)) &bootloader
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
