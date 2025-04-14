@@ -215,7 +215,7 @@
                 timeout-ms = <50>;
                 layers = <3>;
                 key-positions = <20 31>;
-                bindings = &sys_reset;
+                bindings = <&sys_reset>;
            };
            combo_scap {
                 timeout-ms = <50>;
@@ -471,8 +471,8 @@ label= "EXT"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset  &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+ &kp LC(LA(D)) &kp LC(LA(LEFT)) &kp LA(LC(UP)) &kp LC(LA(RIGHT)) &kcp LC(LA(G)) &kp LG(UP)         &kp      &kp F7      &kp F8      &kp F9      &kp F12
+                &bootloader &bt BT_NXT  &trans      &trans      &trans          &kp LG(DOWN)      &kp F4      &kp F5      &kp F6      &kp F11  
     &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
