@@ -420,7 +420,7 @@ label= "NUM"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃ SCROLL DN ┃   ┃     *     ┃     4     ┃     5     ┃     6     ┃     +     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃   UNDO    ┃   CUT     ┃    COPY   ┃   PASTE   ┃ PASTEMTCH ┃   ┃     ,     ┃     1     ┃     2     ┃     3     ┃     =     ┃           ┃
+// ┃   RESET   ┃   UNDO    ┃   CUT     ┃    COPY   ┃   PASTE   ┃ PASTEMTCH ┃   ┃     ,     ┃     1     ┃     2     ┃     3     ┃     =     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃  XXXXXXX  ┃   ┃    EXT    ┃     0     ┃     .     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -429,7 +429,7 @@ label= "NUM"                               ;
 
                 &kp TAB     &kp HOME    &kp UP      &kp END     &msc SCRL_DOWN   &kp SLASH      &kp N7      &kp N8      &kp N9      &kp MINUS
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &msc SCRL_UP    &hrr RSHFT STAR &hrr RGUI N4 &hrr RALT N5 &hrr RCTRL N6 &kp PLUS
-    &none       &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC
+    &bootloader &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC
                                         &trans      &trans      &trans           &mo EXT        &kp N0      &kp DOT
                         >;
                 };
@@ -446,7 +446,7 @@ label= "SYM"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     <     ┃     >     ┃     (     ┃     )     ┃     _     ┃   ┃     :     ┃     ;     ┃     =     ┃     &     ┃   UNAME   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃     !     ┃     {     ┃     }     ┃     ,     ┃   ┃     .     ┃     ~     ┃     -     ┃     @     ┃   NAME    ┃    BSPC   ┃
+// ┃           ┃           ┃     !     ┃     {     ┃     }     ┃     ,     ┃   ┃     .     ┃     ~     ┃     -     ┃     @     ┃   NAME    ┃    RESET  ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃     \     ┃   SPACE   ┃    EXT    ┃   ┃  XXXXXXX  ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -455,7 +455,7 @@ label= "SYM"                               ;
 
                 &kp GRAVE   &kp CARET   &kp LBKT    &kp RBKT    &kp HASH        &backdir    &kp QMARK     &currency   &kp PERCENT  &kp LC(LG(SPACE))
                 &less       &greater    &kp LPAR    &hrl LSHFT RPAR &kp UNDER   &kp COLON &hrr RSHFT SEMI &eqnoteq    &kp AMPS     &uname
-    &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &kp BSPC
+    &trans      &none       &kp EXCL    &kp LBRC    &kp RBRC    &commasemi      &kp DOT     &kp TILDE     &minusplus  &kp AT       &name   &bootloader
                                         &kp BSLH    &kp SPACE   &mo EXT         &trans      &trans        &trans
                         >;
                 };
