@@ -222,17 +222,17 @@
            };
            combo_exclaim {
                 timeout-ms = <50>;
-                key-positions = <5 6>;
+                key-positions = <6 7>;
                 bindings = <&kp EXCL>;
            };
            combo_question {
                 timeout-ms = <50>;
-                key-positions = <6 7>;
+                key-positions = <7 8>;
                 bindings = <&kp QUESTION>;
            };
            combo_guillemet {
                 timeout-ms = <50>;
-                key-positions = <7 8>;
+                key-positions = <8 9>;
                 bindings = <&guillemet>;
            };
            combo_dotcom {
