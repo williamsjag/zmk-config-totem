@@ -437,7 +437,7 @@ label= "NUM"                               ;
     &bootloader &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC
                                         &trans      &trans      &trans           &mo EXT        &kp N0      &kp DOT
                         >;
-                }
+                };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
