@@ -250,6 +250,11 @@
                 key-positions = <27 28 29>;
                 bindings = <&gmail>;
            };
+           combo_stickshift {
+                timeout-ms = <50>;
+                key-positions = <12 17>;
+                bindings = <&sk LSHIFT>;
+           };
     };
 
     macros {
@@ -432,7 +437,7 @@ label= "NUM"                               ;
     &bootloader &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LG(LA(LS(V))) &kp COMMA      &kp N1      &kp N2      &kp N3      &kp EQUAL      &kp BSPC
                                         &trans      &trans      &trans           &mo EXT        &kp N0      &kp DOT
                         >;
-                };
+                }
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
