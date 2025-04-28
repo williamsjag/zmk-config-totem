@@ -114,7 +114,7 @@
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
                 bindings = <&kp TAB>, <&kp GRAVE>;
-                mods = <(MOD_LGUI|MOD_RGUI), (MOD_LALT|MOD_RALT)>;
+                mods = <(MOD_LGUI|MOD_RGUI)>, <(MOD_LALT|MOD_RALT)>;
                 keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             };
      };
