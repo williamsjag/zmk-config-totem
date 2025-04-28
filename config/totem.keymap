@@ -506,7 +506,7 @@ label= "EXT"                               ;
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
-                {
+                
                 bt_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "BT"                                ;
@@ -528,6 +528,6 @@ label= "BT"                                ;
       &trans    &none       &none       &none       &none        &bt BT_CLR_ALL  &bt BT_CLR_ALL &none    &none       &none       &none       &trans
                                         &trans      &trans       &trans          &trans      &trans      &trans      
                         >;
-                }
+                };
         };
 };
