@@ -148,6 +148,14 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
             };
+            lg: layer_grave {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;
+                bindings = <&mo>, <&gravetab>;
+                display-name = "Layer-Grave";
+        };
      };
 //             ┏━━━┳━━━┳━━━┳━━━┳━━━┓   ┏━━━┳━━━┳━━━┳━━━┳━━━┓
 //             ┃ 0 ┃ 1 ┃ 2 ┃ 3 ┃ 4 ┃   ┃ 5 ┃ 6 ┃ 7 ┃ 8 ┃ 9 ┃
@@ -415,7 +423,7 @@ label= "HD Vibranium F"                    ;
                 &kp X       &kp W       &kp M       &kp G       &kp J           &hashdol    &dotcol     &slashstar  &dqtlbkt    &sqtrbkt
                &hrl LCTRL S &hrl LALT C &hrl LGUI N &hrl LSHFT T &kp K          &commasemi &hrr RSHFT A &hrr RGUI E &hrr RALT I &hrr RCTRL H
     &lk_QU Q 0  &kp F       &kp P       &kp L       &kp D       &kp V           &minusplus  &kp U       &kp O       &kp Y       &kp B       &kp Z
-                                        &kp BSPC    &kp R      &lt NUM X &lt SYM ESC &kp SPACE   &kp RETURN
+                                        &kp BSPC    &kp R      &lg NUM 0        &lt SYM ESC &kp SPACE   &kp RETURN
                         >;
                 };
 
