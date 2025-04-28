@@ -116,7 +116,7 @@
                 bindings = <&kp TAB>, <&kp GRAVE>;
                 mods = <(MOD_LGUI|MOD_RGUI) (MOD_LALT|MOD_RALT)>;
                 keep-mods = <(MOD_LGUI|MOD_RGUI)>;
-            }
+            };
      };
      custom_behaviors {
             hrl: home_row_mod_left {
