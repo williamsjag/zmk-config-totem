@@ -342,7 +342,19 @@
         username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S &kp J &kp A &kp G>;
+            bindings = <
+                &macro_tap W
+                &macro_tap I
+                &macro_tap L
+                &macro_tap L
+                &macro_tap I
+                &macro_tap A
+                &macro_tap M
+                &macro_tap S
+                &macro_tap J
+                &macro_tap A
+                &macro_tap G
+            >;
         };
         email: email {
             compatible = "zmk,behavior-macro";
