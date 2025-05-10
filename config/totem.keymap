@@ -342,22 +342,65 @@
         username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S &kp J &kp A &kp G>;
+            bindings = <
+                &macro_tap W
+                &macro_tap I
+                &macro_tap L
+                &macro_tap L
+                &macro_tap I
+                &macro_tap A
+                &macro_tap M
+                &macro_tap S
+                &macro_tap J
+                &macro_tap A
+                &macro_tap G
+            >;
         };
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&username &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            bindings = <
+                &username
+                &macro_tap AT
+                &macro_tap G
+                &macro_tap M
+                &macro_tap A
+                &macro_tap I
+                &macro_tap L
+                &macro_tap DOT
+                &macro_tap C
+                &macro_tap O
+                &macro_tap M
+            >;
         };
         firstname: firstname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp A &kp C &kp K &kp S &kp O &kp N>;
+            bindings = <
+                &macro_tap &sft J
+                &macro_tap A
+                &macro_tap C
+                &macro_tap K
+                &macro_tap S
+                &macro_tap O
+                &macro_tap N
+            >;
         };
         lastname: lastname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&firstname &kp SPACE &kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S>;
+            bindings = <
+                &firstname 
+                &macro_tap SPACE
+                &macro_tap &sft W
+                &macro_tap I
+                &macro_tap L
+                &macro_tap L
+                &macro_tap I
+                &macro_tap A
+                &macro_tap M
+                &macro_tap S
+            >;
         };
         guillemet: guillemet {
             compatible = "zmk,behavior-macro";
@@ -493,7 +536,7 @@ label= "EXT"                               ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃ PREV TAB  ┃ NEXT TAB  ┃ BRWS BACK ┃ BRWS FWD  ┃    GPT    ┃   ┃  DOC END  ┃  MS LEFT  ┃  MS DOWN  ┃ MS RIGHT  ┃ TRANSLATE ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃RESET(HOLD)┃  SEL LINE ┃ SEL W L   ┃   SEL W   ┃  SEL W R  ┃  SEL ALL  ┃   ┃   1PASS   ┃ ZOOM IN   ┃RESET ZOOM ┃ ZOOM OUT  ┃    HELP   ┃RESET(HOLD)┃
+// ┃ BLUETOOTH ┃  SEL LINE ┃ SEL W L   ┃   SEL W   ┃  SEL W R  ┃  SEL ALL  ┃   ┃   1PASS   ┃ ZOOM IN   ┃RESET ZOOM ┃ ZOOM OUT  ┃    HELP   ┃ BLUETOOTH ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃ XXXXXXXXX ┃   ┃ XXXXXXXXX ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
