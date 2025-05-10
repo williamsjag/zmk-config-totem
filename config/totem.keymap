@@ -378,7 +378,7 @@
             #binding-cells = <0>;
             bindings = <
                 &macro_press &mo LSFT
-                &macro_tap &kp &kp J
+                &macro_tap &kp J
                 &macro_release &mo LSFT
                 &macro_tap &kp A
                 &macro_tap &kp C
