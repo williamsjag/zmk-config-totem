@@ -342,69 +342,22 @@
         username: username {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_tap W
-                &macro_tap I
-                &macro_tap L
-                &macro_tap L
-                &macro_tap I
-                &macro_tap A
-                &macro_tap M
-                &macro_tap S
-                &macro_tap J
-                &macro_tap A
-                &macro_tap G
-            >;
+            bindings = <&kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S &kp J &kp A &kp G>;
         };
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &username
-                &macro_tap AT
-                &macro_tap G
-                &macro_tap M
-                &macro_tap A
-                &macro_tap I
-                &macro_tap L
-                &macro_tap DOT
-                &macro_tap C
-                &macro_tap O
-                &macro_tap M
-            >;
+            bindings = <&username &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
         };
         firstname: firstname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press &mo LSFT
-                &macro_tap &kp J
-                &macro_release &mo LSFT
-                &macro_tap A
-                &macro_tap C
-                &macro_tap K
-                &macro_tap S
-                &macro_tap O
-                &macro_tap N
-            >;
+            bindings = <&kp J &kp A &kp C &kp K &kp S &kp O &kp N>;
         };
         lastname: lastname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &firstname 
-                &macro_tap SPACE
-                &macro_press &mo LSFT
-                &macro_tap &kp W
-                &macro_release &mo LSFT
-                &macro_tap I
-                &macro_tap L
-                &macro_tap L
-                &macro_tap I
-                &macro_tap A
-                &macro_tap M
-                &macro_tap S
-            >;
+            bindings = <&firstname &kp SPACE &kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S>;
         };
         guillemet: guillemet {
             compatible = "zmk,behavior-macro";
