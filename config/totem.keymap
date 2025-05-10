@@ -359,18 +359,54 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&username &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            bindings = <
+                &username
+                &macro_tap &kp AT
+                &macro_tap &kp G
+                &macro_tap &kp M
+                &macro_tap &kp A
+                &macro_tap &kp I
+                &macro_tap &kp L
+                &macro_tap &kp DOT
+                &macro_tap &kp C
+                &macro_tap &kp O
+                &macro_tap &kp M
+            >;
         };
         firstname: firstname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp A &kp C &kp K &kp S &kp O &kp N>;
+            bindings = <
+                &macro_press &mo LSFT
+                &macro_tap &kp &kp J
+                &macro_release &mo LSFT
+                &macro_tap &kp A
+                &macro_tap &kp C
+                &macro_tap &kp K
+                &macro_tap &kp S
+                &macro_tap &kp O
+                &macro_tap &kp N
+            >;
         };
         lastname: lastname {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&firstname &kp SPACE &kp W &kp I &kp L &kp L &kp I &kp A &kp M &kp S>;
+            bindings = <
+                &firstname 
+                &macro_tap &kp SPACE
+                &macro_press &mo LSFT
+                &macro_tap &kp W
+                &macro_release &mo LSFT
+                &macro_tap &kp I
+                &macro_tap &kp L
+                &macro_tap &kp L
+                &macro_tap &kp I
+                &macro_tap &kp A
+                &macro_tap &kp M
+                &macro_tap &kp S
+            >;
         };
+	
         guillemet: guillemet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
