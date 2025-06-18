@@ -144,14 +144,6 @@
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
             };
-            lg: layer_grave {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                tapping-term-ms = <200>;
-                bindings = <&mo>, <&gravetab>;
-                display-name = "Layer-Grave";
-        };
      };
 //             ┏━━━┳━━━┳━━━┳━━━┳━━━┓   ┏━━━┳━━━┳━━━┳━━━┳━━━┓
 //             ┃ 0 ┃ 1 ┃ 2 ┃ 3 ┃ 4 ┃   ┃ 5 ┃ 6 ┃ 7 ┃ 8 ┃ 9 ┃
