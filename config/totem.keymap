@@ -423,7 +423,7 @@
         guillemet: guillemet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp G &kp U &kp I;
+            bindings = <&kp COLON &kp G &kp U &kp I>;
         };
         dotcom: dotcom {
             compatible = "zmk,behavior-macro";
