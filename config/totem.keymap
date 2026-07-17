@@ -174,21 +174,23 @@
 //                     ┗━━━┻━━━┻━━━┛   ┗━━━┻━━━┻━━━┛
      combos {
             compatible = "zmk,combos";
-            require-prior-idle-ms = <150>;
             combo_caps {
                 timeout-ms = <50>;
                 key-positions = <13 16>;
                 bindings = <&caps_word>;
+                require-prior-idle-ms = <150>;
             };
             combo_pipe {
                 timeout-ms = <50>;
                 key-positions = <16 17>;
                 bindings = <&kp PIPE>;
+                require-prior-idle-ms = <150>;
             };
             combo_esc {
                 timeout-ms = <50>;
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
+                require-prior-idle-ms = <150>;
             };
            combo_th {
                 timeout-ms = <50>;
@@ -235,11 +237,13 @@
                 layers = <3>;
                 key-positions = <20 31>;
                 bindings = <&sys_reset>;
+                require-prior-idle-ms = <150>;
            };
            combo_scap {
                 timeout-ms = <50>;
                 key-positions = <16 18>;
                 bindings = <&kp LG(LS(N4))>;
+                require-prior-idle-ms = <150>;
            };
            combo_exclaim {
                 timeout-ms = <50>;
@@ -260,21 +264,25 @@
                 timeout-ms = <40>;
                 key-positions = <27 28>;
                 bindings = <&dotcom>;
+                require-prior-idle-ms = <150>;
            };
            combo_dotfr {
                 timeout-ms = <40>;
                 key-positions = <28 29>;
                 bindings = <&dotfr>;
+                require-prior-idle-ms = <150>;
            };
            combo_gmail {
                 timeout-ms = <50>;
                 key-positions = <27 28 29>;
                 bindings = <&gmail>;
+                require-prior-idle-ms = <150>;
            };
            combo_stickshift {
                 timeout-ms = <40>;
                 key-positions = <12 17>;
                 bindings = <&sk LSHIFT>;
+                require-prior-idle-ms = <150>;
            };
     };
 
@@ -415,7 +423,7 @@
         guillemet: guillemet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(BACKSLASH) &kp SPACE &kp SPACE &kp LA(LS(BACKSLASH)) &kp LEFT &kp LEFT>;
+            bindings = <&kp COLON &kp G &kp U &kp I;
         };
         dotcom: dotcom {
             compatible = "zmk,behavior-macro";
